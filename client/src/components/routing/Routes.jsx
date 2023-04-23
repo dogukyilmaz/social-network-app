@@ -1,5 +1,5 @@
 import React from 'react';
-import { Route, Switch } from "react-router-dom";
+import { Route, Switch } from 'react-router-dom';
 
 import Login from '../auth/Login';
 import Register from '../auth/Register';
@@ -14,11 +14,11 @@ import Profiles from '../profiles/Profiles';
 import Profile from '../profile/Profile';
 import Posts from '../posts/Posts';
 import Post from '../post/Post';
-import PrivateRoute from '../routing/PrivateRoute';
+import PrivateRoute from './PrivateRoute';
 
 const Routes = () => {
   return (
-    <section className="container-app">
+    <section className='container-app'>
       <Alert />
       <Switch>
         <Route exact path='/login' component={Login} />
@@ -35,7 +35,7 @@ const Routes = () => {
         <Route component={NotFound} />
       </Switch>
     </section>
-  )
-}
+  );
+};
 
 export default Routes;
